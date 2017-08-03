@@ -13,6 +13,6 @@
   ```
   
   
-  * flagpages的坑，如何使about页面正常显示：
-    1.要在`settings.py` 中加入`SITE_ID = 1`
+* flagpages的坑，如何使about页面正常显示：     
+    1.要在`settings.py` 中加入`SITE_ID = 1`      
     2.要在admin页面把flat page中的Sites参数改为`example.com`，不要用`localhost`
