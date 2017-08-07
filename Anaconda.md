@@ -42,7 +42,7 @@ Current conda install:
 ![HTTPError](https://github.com/xfffrank/Solutions-to-Various-Technical-Problems/blob/master/problem_images/conda/conda_3.JPG?raw=true)
 
 * `pip`命令无法使用  
-【问题详情】  
+#### 问题：
 ```
 $ pip install -e .
 Traceback (most recent call last):
@@ -60,7 +60,7 @@ Traceback (most recent call last):
     from pip._vendor import appdirs
 ImportError: cannot import name 'appdirs'
 ```
-【解决办法】   
+#### 解决方法： 
   在`C:\Program Files\Anaconda3\lib\site-packages\`目录下发现多个`pip`包文件夹，可能是之前重复安装了，移除体积最小的一个文件夹（即保留最新版），困扰多日的问题终于解决了。
 ```
 $ pip
