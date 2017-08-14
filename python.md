@@ -52,7 +52,7 @@ array([[6, 7, 8],
        [3, 4, 5]])
 ```
 
-* testing.assert_array_almost_equal用法
+* `testing.assert_array_almost_equal`用法
 > 说明：如果两个对象没有在指定精确度达到相等，则抛出错误异常，否则正常执行，没有任何输出结果
 ```
 >>> np.testing.assert_array_almost_equal([1.0,2.333,np.nan],
@@ -75,4 +75,23 @@ ValueError:
 Arrays are not almost equal
  x: array([ 1.     ,  2.33333,      NaN])
  y: array([ 1.     ,  2.33333,  5.     ])
+```
+
+* `zeros`用法
+> 返回一个指定类型和结构的数据，填充值为 0
+```
+>>> np.zeros(5)
+array([ 0.,  0.,  0.,  0.,  0.])
+
+>>> np.zeros((5,), dtype=np.int)
+array([0, 0, 0, 0, 0])
+
+>>> np.zeros((2, 1))
+array([[ 0.],
+       [ 0.]])
+       
+>>> s = (2,2)
+>>> np.zeros(s)
+array([[ 0.,  0.],
+       [ 0.,  0.]])
 ```
