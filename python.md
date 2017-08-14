@@ -51,3 +51,28 @@ array([[6, 7, 8],
        [0, 1, 2],
        [3, 4, 5]])
 ```
+
+* testing.assert_array_almost_equal用法
+> 说明：如果两个对象没有在指定精确度达到相等，则抛出错误异常，否则正常执行，没有任何输出结果
+```
+>>> np.testing.assert_array_almost_equal([1.0,2.333,np.nan],
+                                         [1.0,2.333,np.nan])
+                                         
+>>> np.testing.assert_array_almost_equal([1.0,2.33333,np.nan],
+...                                      [1.0,2.33339,np.nan], decimal=5)
+...
+<type 'exceptions.AssertionError'>:
+AssertionError:
+Arrays are not almost equal
+
+(mismatch 50.0%)
+ x: array([ 1.     ,  2.33333,      NaN])
+ y: array([ 1.     ,  2.33339,      NaN])
+>>> np.testing.assert_array_almost_equal([1.0,2.33333,np.nan],
+...                                      [1.0,2.33333, 5], decimal=5)
+<type 'exceptions.ValueError'>:
+ValueError:
+Arrays are not almost equal
+ x: array([ 1.     ,  2.33333,      NaN])
+ y: array([ 1.     ,  2.33333,  5.     ])
+```
