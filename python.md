@@ -1,8 +1,17 @@
-## 安装
-* 使用setup.py安装python模块
-
-  下载模块包，解压，进入模块文件夹，执行`python setup.py install`
+## 零碎
+* 使用setup.py安装python模块  
+  下载模块包，解压，进入模块文件夹，执行`python setup.py install`
+  
+* 如果代码中出现中文，需要在文件开头加上中文注释，如果开头不声明保存编码的格式是什么，那么它会默认使用ASKII码保存文件。  
+  `#coding=utf-8` 或者 `#coding=gbk`
   
+* 如何在引号中引用变量  
+  ```
+  >>> a = "Frank"
+  >>> print("I am " + a + "!")
+  I am Frank!
+  ```
+
 ## DataFrame
 * reindex用法
 ```
@@ -145,3 +154,4 @@ array([0, 5, 2, 3, 4, 5])
 1 two
 2 three
 ```
+
