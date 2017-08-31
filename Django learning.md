@@ -16,3 +16,14 @@
 * flagpages的坑，如何使about页面正常显示：     
     1.要在`settings.py` 中加入`SITE_ID = 1`      
     2.要在admin页面把flat page中的Sites参数改为`example.com`，不要用`localhost`
+    
+* 设置管理员账号密码  
+```
+python manage.py createsuperuser
+```
+* 设置`pymysql`为`django`项目的`mysql`客户端  
+在`__init__.py`中添加代码
+```
+import pymysql
+pymysql.install_as_MySQLdb()
+```
