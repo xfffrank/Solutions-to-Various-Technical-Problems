@@ -134,6 +134,16 @@ array([0, 5, 2, 3, 4, 5])
 1
 ```
 
+* `sign`
+> The sign function returns -1 if x < 0, 0 if x==0, 1 if x > 0.
+
+```
+>>> np.sign([-5., 4.5])
+array([-1.,  1.])
+>>> np.sign(0)
+0
+```
+
 ## `Python`内置函数
 * `enumerate()`
 1. 描述：enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中。
