@@ -27,3 +27,6 @@ python manage.py createsuperuser
 import pymysql
 pymysql.install_as_MySQLdb()
 ```
+
+* 数据库迁移后查看数据库改变的源码  
+`python manage.py sqlmigrate [appName] [migrate_number, e.g. 0001]`
