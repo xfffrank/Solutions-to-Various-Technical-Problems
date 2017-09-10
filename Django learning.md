@@ -30,3 +30,6 @@ pymysql.install_as_MySQLdb()
 
 * 数据库迁移后查看数据库改变的源码  
 `python manage.py sqlmigrate [appName] [migrate_number, e.g. 0001]`
+
+* pyCharm 中添加已创建的 virtualenv 环境  
+> add local选择创建的虚拟环境env中的python解释器（如D:\venv\Scripts\python.exe）就可以了
