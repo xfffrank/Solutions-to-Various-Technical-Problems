@@ -20,3 +20,21 @@ Query OK, 0 rows affected (0.01 sec)
 
 * 删除用户  
 `DROP USER 'username'@'host';`
+
+* 安装，启动`mysql`服务  
+```
+brew install mysql
+```
+```
+xiefengdeAir:~ Frank$ mysql.server stop
+Shutting down MySQL
+.. SUCCESS! 
+xiefengdeAir:~ Frank$ mysql.server start
+Starting MySQL
+. SUCCESS! 
+xiefengdeAir:~ Frank$ mysql.server restart
+Shutting down MySQL
+.... SUCCESS! 
+Starting MySQL
+. SUCCESS! 
+```
