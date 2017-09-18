@@ -218,3 +218,61 @@ array([-1.,  1.])
 2
 3
 ```
+
+* `join()`  
+1.描述：连接字符串  
+2.用法示例：
+```
+>>>li = ['my','name','is','bob'] 
+>>>' '.join(li) 
+'my name is bob' 
+
+>>>'_'.join(li) 
+'my_name_is_bob' 
+```
+
+* `split()`  
+1.描述：拆分字符串  
+2.用法示例：
+```
+>>> b = 'my..name..is..bob' 
+ 
+>>> b.split() 
+['my..name..is..bob'] 
+ 
+>>> b.split("..") 
+['my', 'name', 'is', 'bob'] 
+
+>>> b.split("..",0) 
+['my..name..is..bob'] 
+ 
+>>> b.split("..",1) 
+['my', 'name..is..bob'] 
+ 
+>>> b.split("..",2) 
+['my', 'name', 'is..bob'] 
+ 
+>>> b.split("..",-1) 
+['my', 'name', 'is', 'bob'] 
+```
+
+* `strip()`  
+1.描述：删除字符串头尾字符  
+2.用法示例：
+```
+>>> a = '   123  '
+>>> a.strip()
+'123'
+
+>>> a = '\t\n123\t'
+>>> a.strip()
+'123'
+
+>>> a = 'ab123ab'
+>>> a.strip('ab')
+'123'
+
+>>> a = 'ab123'
+>>> a.replace('ab', '')
+'123'
+```
