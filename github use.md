@@ -17,7 +17,8 @@
 
 #### 在 Github 上添加公钥         
 1.`$ ssh -T git@github.com`检查权限  
-  `Permission denied (publickey).`    
+  `Permission denied (publickey).`  
+
 2.生成 ssh 密钥
 ```
 $ ssh-keygen -t rsa -C "xfffrank"
@@ -42,16 +43,19 @@ The key's randomart image is:
 |              .E |
 +----[SHA256]-----+
 
-```         
-3.复制公钥     
+```
+
+3.复制公钥  
+
 ```
 $ cat /home/FrankXie/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCohUb8EJqFuzaNJbCL8ck044lgvjsJr8PgCNerp+e0lrPBTmlPNLo1+kJXFfTN3TVUJ7kp6U7aWHtS8UQij4sb/YfEMxlBY7wh9L4JpNSEEy+sYoqjxbooxS3sPIRXnxdoRUTDldG1xC/Vc593oph0JzkkTPAghAkUsMUMsx8GMI33NMqfF81hAtoGVNCNeZALCGDw7riJFM5y2rdmzVFyivXaqiMjuCFqVChoDZwY1fcqiUjkbGX9MsxIUvL9R3S11yavAiZDKBJV+8RGCRJmKAzYACA+kX5e5Go920A1+wcgGJewKqurPHHgjYCfo9YCFbm1rP4Ne4cmpvmaL91v xfffrank
 ```
-4.在 Github settings 上添加该公钥  
+4.在 Github settings 上添加该公钥   
+
 5.测试权限  
+
 ```
 $ ssh -T git@github.com
 Hi xfffrank! You've successfully authenticated, but GitHub does not provide shell access.
 ```
-
