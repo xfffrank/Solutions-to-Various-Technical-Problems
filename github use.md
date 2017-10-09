@@ -1,13 +1,13 @@
-#### 如何创建文件夹  
+### 如何创建文件夹  
   在网页上点击新建文件，在命名框中添加`/`就变成文件夹
 
-#### 远程仓库
+### 远程仓库
   - 添加
 `$git remote add [name] [url]`
   - 删除
 `$git remote rm [name]`
 
-#### 分支
+### 分支
   - 删除远程分支
 `$git push origin --delete <remoteBranchName>`
   - 推送本地分支
@@ -15,7 +15,7 @@
   - 合并其他分支到当前分支
 `$git merge <branchName>(要合并的分支)`
 
-#### 在 Github 上添加公钥         
+### 在 Github 上添加公钥         
 1.`$ ssh -T git@github.com`检查权限  
   `Permission denied (publickey).`  
 
@@ -59,3 +59,6 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCohUb8EJqFuzaNJbCL8ck044lgvjsJr8PgCNerp+e0
 $ ssh -T git@github.com
 Hi xfffrank! You've successfully authenticated, but GitHub does not provide shell access.
 ```
+
+### 本地分支与远程分支冲突的解决办法
+- 若本地仓库是远程仓库的子集，即本地包含的文件远程都有，可以先将本地分支推送到远程仓库，再通过 pull request 与 master 分支合并。
