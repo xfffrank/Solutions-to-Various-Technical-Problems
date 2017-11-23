@@ -8,11 +8,11 @@
 `$git remote rm [name]`
 
 ### 分支
-  - 删除远程分支
+- 删除远程分支  
 `$git push origin --delete <remoteBranchName>`
-  - 推送本地分支
-`$git push <remoteRepository> <localBranchName>`
-  - 合并其他分支到当前分支
+- 推送本地分支，若远程不存在该分支会自动创建  
+`$git push <remoteRepository> <localBranchName>`  
+- 合并其他分支到当前分支  
 `$git merge <branchName>(要合并的分支)`
 
 ### 在 Github 上添加公钥         
