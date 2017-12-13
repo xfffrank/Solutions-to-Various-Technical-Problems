@@ -11,3 +11,7 @@ Python 3.6.2 |Anaconda custom (x86_64)| (default, Jul 20 2017, 13:14:59)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> exit()
 ```
+
+* 执行`brew update`命令出现以下错误  
+`xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun`  
+解决方法：`xcode-select --install`
