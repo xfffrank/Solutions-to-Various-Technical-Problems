@@ -82,3 +82,7 @@ Commands:
   completion                  A helper command used for command completion.
   help                        Show help for commands.
 ```
+
+
+#### `An HTTP error occurred when trying to retrieve this URL.`
+解决方法：网络连接错误，检查是否挂了代理 VPN。
