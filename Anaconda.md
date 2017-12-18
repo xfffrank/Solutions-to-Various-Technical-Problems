@@ -86,3 +86,17 @@ Commands:
 
 #### `An HTTP error occurred when trying to retrieve this URL.`
 解决方法：网络连接错误，检查是否挂了代理 VPN。
+
+
+
+
+### MAC 设置环境变量
+#### 编辑`~/.bash_profile`文件  
+`sudo vi ~/.bash_profile`
+#### 举例    
+anaconda 安装后出现`conda not found`命令错误，说明需要添加环境变量。  
+在`~/.bash_profile`文件中写入：  
+```
+PATH=$HOME/anaconda3/bin:$PATH
+```
+⚠️环境变量读取是按先后次序的，所以把变量放在前面。
