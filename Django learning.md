@@ -35,3 +35,4 @@ pymysql.install_as_MySQLdb()
 > add local选择创建的虚拟环境env中的python解释器（如D:\venv\Scripts\python.exe）就可以了  
  **路径不可以含有中文或表情字符**
 
+(python3.6)安装 fabric3 后一键部署命令： `fab deploy`
