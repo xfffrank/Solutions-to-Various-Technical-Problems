@@ -38,3 +38,6 @@ Shutting down MySQL
 Starting MySQL
 . SUCCESS! 
 ```
+
+* 修改默认值
+`alter table table_name alter column_name set default default_value;`
