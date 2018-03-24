@@ -11,6 +11,13 @@
   >>> print("I am " + a + "!")
   I am Frank!
   ```
+* 字符串转换为日期格式  
+  ```
+  import datetime
+
+  datetime.datetime.strptime('2017-09-09','%Y-%m-%d')
+  ```
+
 
 ## DataFrame
 * reindex用法
@@ -44,7 +51,7 @@ Safari                 404           0.07
 Iceweasel                0           0.00
 Comodo Dragon            0           0.00
 IE10                   404           0.08
-Chrome                 200           0.02
+Chrome                 200           0.0
 ```
 
 ## numpy
