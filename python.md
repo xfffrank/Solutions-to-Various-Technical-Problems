@@ -17,6 +17,12 @@
 
   datetime.datetime.strptime('2017-09-09','%Y-%m-%d')
   ```
+* syntaxerror：non-utf-8 code starting with ... in xxx.py  
+  在出错的python脚本的首行加入`# coding=utf8`
+  
+* Windows 运行 pip 命令出现 UnicodeDecodeError  
+  打开 c:\program files\python36\lib\site-packages\pip\compat\__init__.py约75行
+  `return s.decode('utf_8')`改为`return s.decode('cp936')`
 
 
 ## DataFrame
