@@ -41,3 +41,7 @@ Starting MySQL
 
 * 修改默认值
 `alter table table_name alter column_name set default default_value;`
+
+
+* 修改字符集为 utf8mb4  
+`ALTER TABLE [table_name] CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;`
