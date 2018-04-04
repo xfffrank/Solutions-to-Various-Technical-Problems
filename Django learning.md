@@ -24,4 +24,4 @@ pymysql.install_as_MySQLdb()
 `fab deploy`
 
 * Django shell 内运行 Python 脚本    
-`python manage.py shell script < xxx.py`
+`python manage.py shell < xxx.py`
