@@ -23,6 +23,13 @@
 * Windows 运行 pip 命令出现 UnicodeDecodeError  
   打开 c:\program files\python36\lib\site-packages\pip\compat\__init__.py约75行
   `return s.decode('utf_8')`改为`return s.decode('cp936')`
+  
+* 生成、安装项目依赖包  
+```
+pip freeze > path/requirements.txt
+
+pip install -r path/requirements.txt
+```
 
 
 ## DataFrame
