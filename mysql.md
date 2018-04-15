@@ -1,3 +1,7 @@
+* 创建数据库，用 root 权限创建名为 Vent 的数据库    
+`mysqladmin -u root -p create Vent`
+
+
 * 把数据库'test'中的所有表的所有权限给用户'Frank'  
 ```
 mysql> grant all privileges on test.* to 'Frank'@'localhost'
