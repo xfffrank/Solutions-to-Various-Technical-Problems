@@ -73,3 +73,10 @@ git add . ＃重新加入文件
 git commit -m "fixed untracked files"
 ```
 
+### 版本回退
+```
+git reset --hard [commit_id]
+```
+注：通过`git log`命令查看每个 commit 版本的id；`commit_id`不需要写全
+
+
