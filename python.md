@@ -1,3 +1,25 @@
+### 解决Python3下打印utf-8字符串出现UnicodeEncodeError的问题
+运行以下代码，可以看到编码为 ANSI_X3.4-1968
+```python
+>>> import sys
+>>> sys.stdout
+<_io.TextIOWrapper name='' mode='w' encoding='ANSI_X3.4-1968'>
+```
+要避免该错误，需要将编码改为 utf-8。
+#### 解决方案一
+在程序中加入以下代码
+```python
+import sys
+import io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+```
+#### 解决方案二
+运行 python 脚本的时候加上PYTHONIOENCODING=utf-8，即
+```python
+PYTHONIOENCODING=utf-8 python your_script.py
+```
+
+
 ## 零碎
 * 使用setup.py安装python模块  
   下载模块包，解压，进入模块文件夹，执行`python setup.py install`
