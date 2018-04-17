@@ -22,3 +22,18 @@ ClientAliveCountMax 86400
 
 2、重新启动系统SSH服务   
 `#sudo service ssh restart`
+
+#### Linux中搭建selenium运行环境
+> 思路：安装 selenium，浏览器 Firefox --> 安装相关工具为selenium驱动浏览器提供无图形化界面 --> 安装相关驱动，配置环境变量
+
+1. 安装 selenium，浏览器 Firefox
+```
+pip install selenium
+sudo apt-get install firefox
+```
+2. 安装相关工具为selenium驱动浏览器提供无图形化界面
+```
+sudo apt-get install xvfb
+pip install pyvirtualdisplay
+```
+3. 安装 geckodriver，作相关配置，参见https://askubuntu.com/questions/870530/how-to-install-geckodriver-in-ubuntu?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
