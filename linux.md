@@ -52,3 +52,28 @@ set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 set termencoding=utf-8
 set encoding=utf-8
 ```
+### 解决 linux 终端无法输入中文的问题
+1. 首先要从Ubuntu语言设置那里，把中文语言包安装上。
+  打开`/etc/environment`，在下面添加如下两行
+```bash
+LANG=”zh_CN.UTF-8″
+LANGUAGE=”zh_CN:zh:en_US:en”
+```
+
+2. 打开 `/var/lib/locales/supported.d/local`，添加zh_CN.GB2312字符集，如下：
+```bash
+en_US.UTF-8 UTF-8
+zh_CN.UTF-8 UTF-8
+zh_CN.GBK GBK
+zh_CN GB2312
+```
+  保存后，执行命令：
+  ```
+  sudo locale-gen
+  ```
+
+3. `打开/etc/default/locale`，修改为：
+```bash
+LANG=”zh_CN.UTF-8″
+LANGUAGE=”zh_CN:zh:en_US:en”
+```
