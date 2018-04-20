@@ -44,3 +44,11 @@ pip install pyvirtualdisplay
 # 注意等号两边绝对不能有空格！
 export PATH=$PATH:/path-to-the-folder-containing-geckodriver/
 ```
+
+### 解决 vim 中文乱码问题
+* 在`~/.vimrc`文件中加入以下设置  
+```bash
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set termencoding=utf-8
+set encoding=utf-8
+```
