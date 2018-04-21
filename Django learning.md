@@ -25,3 +25,13 @@ pymysql.install_as_MySQLdb()
 
 * Django shell 内运行 Python 脚本    
 `python manage.py shell < xxx.py`
+
+* Django shell 内运行 Python 脚本 （linux环境下）  
+    1. 运行 shell 前手动设置编码 utf-8：
+    ```python
+    PYTHONIOENCODING=utf-8 python manage.py shell
+    ```  
+    2. 运行脚本前手动设置编码 utf-8：  
+    ```python
+    >> exec(open('users/insertUserData.py',encoding='utf-8').read())
+    ```
