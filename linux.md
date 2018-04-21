@@ -77,3 +77,19 @@ zh_CN GB2312
 LANG=”zh_CN.UTF-8″
 LANGUAGE=”zh_CN:zh:en_US:en”
 ```
+
+### 在`/var/log`目录中没有 cron 日志
+1. 修改`/etc/rsyslog.d/50-default.conf`文件，将 #cron.*  前的  #  删掉；  
+2. 重启rsyslog服务  
+```bash
+service rsyslog restart
+```
+3. 重启 cron 服务  
+```bash
+service cron restart
+```
+4. 查看 cron 日志  
+```bash
+tail -f /var/log/cron.log  
+```
+
