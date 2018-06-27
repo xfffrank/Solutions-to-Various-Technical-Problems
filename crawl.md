@@ -9,6 +9,6 @@
   4. height and width are both > 0
   5. for an input, the attribute type != hidden
   
-  So check these out when you encountered the issue of ElementNotVisibleException. In my case, I used `xxx.find_element_by_xpath('//xpath...').click()` to locate the element, which is not accurate enough. Because there are multiple elements with similar xpath expressions. When I check it with `xxx.find_elements_by_xpath('//xpath...')`, I did get a list with multiple elements.
+  So check these out when you encountered the issue of ElementNotVisibleException. In my case, I used `xxx.find_element_by_xpath('//xpath...').click()` to locate the element, which is not accurate enough. Because there are multiple elements with similar xpath expressions. When I check it with `xxx.find_elements_by_xpath('//xpath...')`, I did get a list with multiple elements. The next step is as simple as getting the specific element I want by using the index of the list.
 
 * Keep learning and don't give up easily.
